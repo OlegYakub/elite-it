@@ -1,7 +1,25 @@
-﻿@media screen and (max-width: 960px){
+﻿@media screen and (min-width: 960px ) and (max-width: 1169px){
 	.container{
 		max-width:  940px;
 	}
+	/* ====header========================== */
+	.header{
+		&__logo{
+		margin-left: 30px;
+		
+		}
+
+		&__link{
+			padding: 24px 13px 22px;
+		}
+
+		.first{
+		padding-left: 41px;
+		padding-right: 38px;
+		
+		}
+	}
+
 	/* ====remake-main==== */
 	.main-remaik{
 		.main-content{
@@ -53,13 +71,47 @@
 		}
 	}
 }
-@media screen and (max-width: 743px){
+@media screen and (min-width: 744px) and (max-width: 959px){
 	.container{
-		max-width:  320px;
+		max-width:  745px;
+	}
+
+	/* ====header========================== */
+	.header{
+		&__logo{
+		margin-left: 10px;
+		margin-top: 8px;
+		}
+
+		&__link{
+			padding: 24px 13px 22px;
+		}
+
+		.first{
+			padding-left: 18px;
+			padding-right: 27px;
+		}
+
+		&__logo{
+		position: static;
+		width: auto;
+			img{
+				position: static;
+			}
+		}
+	}
+}
+@media screen and (max-width: 743px){
+	
+	header, main{
+		.container{
+			max-width:  320px;
+		}
 	}
 	.border-main-top-blue, .border-main-top-yellow{
 		border-width: 7px;
 	}
+
 	.border-main-bot{
 		border: none;
 	}
@@ -86,6 +138,75 @@
 	.pad-b-50{
 		padding-bottom: 35px;
 	}
+
+
+	/* ====header==== */
+	header{
+		position: fixed;
+
+		.mob-nav{
+			display: none;
+			background: rgba(255, 255, 255, 0.5);
+			//position: absolute;
+			left: 0;
+			top: 50px;
+			-webkit-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.3),  inset 0px 6px 10px -2px rgba(0,0,0,0.13);
+			-moz-box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.3),  inset 0px 6px 10px -2px rgba(0,0,0,0.13);
+			box-shadow: 0px 6px 5px -2px rgba(0,0,0,0.3),  inset 0px 6px 10px -2px rgba(0,0,0,0.13);
+			&__body{
+				padding: 0 40px;
+			}
+
+			&__link{
+				padding: 19px 0;
+				display: block;
+				color: #1d1e1d;
+				border-top: 1px solid #acacac;
+				font-size: 14px;
+				&--first{
+					border: none;
+					position: relative;
+					&:before{
+						position: absolute;
+						content: "";
+						width: 6px;
+						height: 11px;
+						background-image: url(../img/mob-serv-icon.png);
+						top: 23px;
+    					right: -22px;
+
+					}
+				}
+				
+			}
+		}
+	}
+	
+	
+
+	.header{
+		&__logo{
+			margin-top: 4px;
+			margin-left: 15px;
+			img{
+				position: static;
+			}
+		
+		}
+	}
+	
+	.header__nav{
+		display: none;
+	}
+	.burger{
+		display: none;
+		margin: 18px 20px ;
+	}
+	.burger__item{
+		display: block;
+	}
+
+
 	/* ====remake-main==== */
 	.main-remaik{
 		.main-top{
@@ -181,7 +302,7 @@
 	.footer{
 		.foot-info{
 			margin: 0 0 15px;
-				.foot-left, .fu, em{
+				.foot-left, .fu, em, .foot-center{
 					display: none;
 				}
 				.foot-right{
