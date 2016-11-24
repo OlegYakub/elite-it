@@ -20,35 +20,6 @@
 		}
 	}
 
-	/* ====remake-main==== */
-	.main-remaik{
-		.main-content{
-			h4{
-				margin-bottom: 15px;
-			}
-			ul{
-				li{
-					&:nth-child(odd){
-						p{
-							padding-right: 75px;
-						}
-					}
-					&:nth-child(even){
-						.cont-serv{
-							padding-left: 75px;
-						}
-					}
-				}
-			}
-		}
-	}
-	/* ====footer==== */
-	.footer{
-		.foot-info{
-			margin: 50px 0 35px;
-		}
-	}
-}
 @media screen and (min-width: 744px) and (max-width: 959px){
 	.container{
 		max-width:  745px;
@@ -78,14 +49,97 @@
 			}
 		}
 	}
+	
+	/* ====remake-main==== */
+	.main-remaik{
+		.main-content{
+			h4{
+				margin-bottom: 15px;
+			}
+			ul{
+				li{
+					&:nth-child(odd){
+						p{
+							padding-right: 75px;
+						}
+					}
+					&:nth-child(even){
+						.cont-serv{
+							padding-left: 75px;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* ====main-webmobdev==== */
+	.main-webmobdev{
+		.container{
+			h4{
+				padding: 0 0 15px;
+    		text-align: center;
+			}
+		}
+	}
+	/* ====footer==== */
+	.footer{
+		.foot-info{
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+			margin: 50px 0 35px;
+				.foot-left{
+					li{
+						margin: 30px 0;
+							&:last-child{
+								display: block;
+							}
+					}
+				}
+				.foot-center{
+					display: none;
+				}
+		}
+	}
+}
 }
 @media screen and (max-width: 743px){
-	.container{
-		max-width:  320px;
+	
+	header, main{
+		.container{
+			max-width:  320px;
+		}
 	}
 	.border-main-top-blue, .border-main-top-yellow{
 		border-width: 7px;
 	}
+
+	.border-main-bot{
+		border: none;
+	}
+	.btn{
+		margin: auto;
+	}
+	.main-h4{
+		font-size: 18px;
+		margin: 15px 0 20px;
+	}
+	.main-p{
+		font-size: 14px;
+	}
+	.pad-l-r-100{
+		padding: 0;
+	}
+	.pad-t-b-50{
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.pad-t-50{
+		padding-top: 35px;
+	}
+	.pad-b-50{
+		padding-bottom: 35px;
+	}
+
 
 	/* ====header==== */
 	header{
@@ -154,14 +208,11 @@
 	}
 
 
-
-
-
 	/* ====remake-main==== */
 	.main-remaik{
 		.main-top{
 			.info{
-				top: 8vw;
+				top: 22vw;
 					h4{
 						font-size: 18px;
 						text-align: center;
@@ -171,8 +222,14 @@
 						max-width: 100%;
 					}
 			}
+			.slider{
+				display: none;
+			}
 			#bx-pager{
 				display: none;
+			}
+			.border-main-top-blue-320{
+				display: block;
 			}
 		}
 		.main-content{
@@ -182,6 +239,7 @@
 			ul{
 				display: block;
 				li{
+					padding-bottom: 36px;
 					&:nth-child(odd){
 						border-right: none;
 						p{
@@ -201,15 +259,106 @@
 									width: 60%;
 								}
 							}
+							.serv-info{
+								h5{
+									font-size: 18px;
+									height: 40px;
+								}
+								p{
+									min-height: 170px;
+								}
+							}
 					}
 				}
 			}
 		}
 	}
+	.nav-main-320{
+		display: block;
+	}
+	/* ====main-careers==== */
+	.main-careers{
+    // padding-bottom: 25vw;
+			.careers-cont{
+				display: block;
+			}
+	}
+	/* ====main-webmobdev, .main-dedic==== */
+	.main-webmobdev, .main-dedic, .main-softare{
+		// padding-bottom: 25vw;
+			.container{
+				.webmobdev-cont, .dedic-cont, .softare-cont{
+					// padding: 0;
+						ul{
+							.main-p{
+								img{
+									margin-right: 15px;
+								}
+							}
+						}
+				}
+			}
+	}
 	/* ====footer==== */
 	.footer{
 		.foot-info{
-			margin: 45px 0 40px;
+			margin: 0 0 15px;
+				.foot-left, .fu, em, .foot-center{
+					display: none;
+				}
+				.foot-right{
+					li{
+						&:first-child{
+							display: none;
+						}
+						&:last-child{
+							-webkit-justify-content: center;
+							justify-content: center;
+						}
+					}
+					.foot-contact{
+						display: flex;
+						width: 100%;
+						margin-top: 0;
+							.foot-contact-item{
+								display: flex;
+								height: 49px;
+								width: 50vw;
+									&:first-child{
+										background: #FFA82D;
+											a{
+												width: 100%;
+												i{
+													margin: auto;
+													width: 26px;
+													height: 22px;
+													background: url("../img/mail-320.png")no-repeat;
+													background-size: cover;
+												}
+											}
+									}
+									&:last-child{
+										background: #006db3;
+											a{
+												width: 100%;
+												i{
+													margin: auto;
+													width: 22px;
+													height: 22px;
+													background: url("../img/telephone-handle-silhouette-320.svg")no-repeat;
+													background-size: cover;
+												}
+											}
+									}
+									a{
+										margin: auto;
+											img{
+												margin-right: 0;
+											}
+									}
+							}
+					}
+				}
 		}
 	}
 }
