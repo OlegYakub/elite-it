@@ -632,6 +632,39 @@ header{
 		}
 }
 
+/* ========aboutus========= */
+.main-aboutus{
+	background: url("../img/aboutus-bot.png")no-repeat;
+	background-position: bottom;
+	padding-bottom: 20vw;
+	-webkit-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+	
+}
+
+.right-img{
+	display: none;
+	float: right;
+}
+
+.crist-photo{
+	position: relative;
+	
+	&__item{
+		border: 3px solid #fff;
+		position: absolute;
+		right: 140px;
+		top: -189px;
+		width: 16.75%;
+		max-width: 200px;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
 /* ========footer========= */
 .footer{
 	.foot-info{
